@@ -35,7 +35,7 @@ from utime import sleep, sleep_us
 rtc = RTC()
 SEG7 = tm1637.TM1637(clk=Pin(7), dio=Pin(6)) # Setup display driver
 
-# Xaio has onboard RGB Leds.
+# Xiao has onboard RGB Leds.
 LEDR = Pin(17, Pin.OUT, Pin.PULL_UP, value=1) # Turns off red LED
 LEDG = Pin(16, Pin.OUT, Pin.PULL_UP, value=1) # Turns off green LED
 LEDB = Pin(25, Pin.OUT, Pin.PULL_UP, value=1) # Turns off blue LED
